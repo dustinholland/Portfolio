@@ -1,5 +1,5 @@
 import random
-import art
+import blackjackart
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 continue_playing = True
@@ -21,7 +21,7 @@ while continue_playing:
     play_game = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ").lower()
     print("\n" * 20)
     if play_game == "y":
-        print(art.logo)
+        print(blackjackart.logo)
         player_draw()
         player_draw()
         current_score = sum(players_hand)
